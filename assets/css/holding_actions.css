@@ -1,0 +1,4 @@
+.isawesome {
+  transition: 1s all;
+  animation: awesomeEyes 2 0.3s ease alternate;
+}

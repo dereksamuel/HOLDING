@@ -1,0 +1,101 @@
+@keyframes truena {
+  0% {
+    background: rgb(2,0,36);
+  }
+  100% {
+    background: rgb(135, 131, 219);
+  }
+}
+
+@keyframes ray {
+  0% {
+    opacity: 0;
+    transform: rotate(5deg);
+  }
+  10% {
+    opacity: 0.2;
+    transform: rotate(-5deg);
+  }
+  20% {
+    opacity: 0;
+    transform: rotate(10deg);
+  }
+  30% {
+    opacity: 0.5;
+    transform: rotate(-10deg);
+  }
+  40% {
+    opacity: 0.2;
+    transform: rotate(20deg);
+  }
+  50% {
+    opacity: 0.7;
+    transform: rotate(-20deg);
+  }
+  60% {
+    opacity: 0.5;
+    transform: rotate(30deg);
+  }
+  70% {
+    opacity: 0.9;
+    transform: rotate(-30deg);
+  }
+  80% {
+    opacity: 0.7;
+    transform: rotate(-40deg);
+  }
+  90% {
+    opacity: 1;
+    transform: rotate(-40deg) scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0deg) scale(1.2);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes walk {
+  0% {
+    transform: rotate(0) translateY(0);
+  }
+  100% {
+    transform: rotate(-18deg) translateY(-4px);
+  }
+}
+
+
+@keyframes leg_pos_move {
+  0% {
+    transform: rotate(0) translateY(0);
+  }
+  100% {
+    transform: rotate(70deg) translate(-25px, 8px);
+  }
+}
+
+@keyframes movemeX {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(175px);
+  }
+}
+
+@keyframes awesomeEyes {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}

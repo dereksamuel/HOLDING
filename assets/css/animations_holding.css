@@ -1,0 +1,22 @@
+@keyframes parpadeo {
+  0% {
+    border: 1px solid #b89e91;
+  }
+  100% {
+    border: 5px solid #b89e91;
+  }
+}
+
+@keyframes moveMuslo {
+  0% {
+    transform: translate(0);
+  }
+
+  50% {
+    transform: translate(15px);
+  }
+
+  100% {
+    transform: translate(100%);
+  }
+}

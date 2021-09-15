@@ -1,0 +1,335 @@
+.Holding {
+  position: relative;
+  max-width: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 15px;
+}
+
+.Holding .face {
+  border-radius: 25px 25px 20px 20px;
+  background-color: var(--color-light-2);
+  width: 45px;
+  height: 62px;
+  border: #6c5c5c 2px solid;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0px 3px 4px inset #866960;
+}
+
+.Head {
+  width: 45px;
+  height: 62px;
+  position: relative;
+}
+
+.Holding .face_2 {
+  width: 41px;
+  height: 23px;
+  position: absolute;
+  border-radius: 0 0 50% 50%;
+  bottom: -2px;
+  box-shadow: 0px -8px 6px inset #9e7d74b8;
+  border-top: none;
+  left: 0.5px;
+}
+
+.Holding .oreja_1_lobulo_1, .oreja_2_lobulo_1 {
+  width: 8px;
+  height: 15px;
+  border-radius: 50% 50% 50% 0;
+  background-color: #d8bfae;
+  position: absolute;
+  top: 45%;
+  right: -11px;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+}
+
+.Holding .oreja_1_lobulo_2, .oreja_2_lobulo_2 {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #d8bfae;
+  position: absolute;
+  top: 58%;
+  right: -6px;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+}
+
+.Holding .oreja_2_lobulo_1 {
+  border-radius: 50% 50% 0 50%;
+  left: -3px;
+}
+
+.Holding .oreja_2_lobulo_2 {
+  left: -0.5px;
+}
+
+.Holding .eye1, .Holding .eye2 {
+  border-radius: 5px 25px 5px 25px;
+  background: aliceblue;
+  width: 10px;
+  height: 10px;
+  border-top: 1px solid #36322d;
+  transform: rotate(-45deg);
+  position: absolute;
+  left: 6px;
+  top: 20px;
+  /*animation: parpadeo 1s infinite ease-in-out alternate;*/
+}
+
+.Holding .eye2 {
+  left: auto;
+  right: 6px;
+}
+
+.pierna2 {
+  position: absolute;
+  left: 42px;
+  top: 169px;
+  transform: rotate(0deg);
+  transform-origin: left top;
+  height: 102px;
+  width: 27px;
+}
+
+.pierna1 {
+  position: absolute;
+  left: 1px;
+  top: 169px;
+  transform: rotate(0deg);
+  transform-origin: left top;
+  height: 102px;
+  width: 27px;
+}
+
+.arm1_container {
+  position: absolute;
+  left: 0px;
+}
+
+.arm2_container {
+  position: absolute;
+  right: 0px;
+}
+
+.Holding .eye1::after, .Holding .eye2::after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--color-black);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.noise {
+  border-radius: 5px;
+  width: 9px;
+  height: 10px;
+  border-right: 3px solid transparent;
+  border-left: 3px solid transparent;
+  border-bottom: 22px solid #d8bfae;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 2px 0px #756356;
+}
+
+.ceja1, .ceja2 {
+  border-radius: 25px 5px 25px 5px;
+  width: 14px;
+  height: 8px;
+  position: absolute;
+  top: 16px;
+  border-top: #36312e 2px solid;
+  left: 3px;
+  transform: rotate(6deg);
+}
+
+.ceja2 {
+  border-radius: 5px 25px 5px 25px;
+  left: auto;
+  right: 3px;
+  transform: rotate(-6deg);
+}
+
+.cuello {
+  height: 30px;
+  width: 30px;
+  background-color: #e8cdba;
+  box-shadow: 0px 3px 11px inset #866960;
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: #6c5c5c 2px solid;
+}
+
+.mouth {
+  border-radius: 5px 25px 5px 25px;
+  background: rgb(181, 139, 139);
+  width: 8px;
+  height: 8px;
+  transform: rotate(-45deg) translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 6px;
+}
+
+.Torso {
+  width: 70px;
+  height: 90px;
+  clip-path: polygon(3.57% -2.78%, 97.14% 2.22%, 84.29% 100%, 21.43% 101.11%);
+  background: url(https://image.freepik.com/foto-gratis/textura-tela-negra_1122-945.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px 20px;
+  position: absolute;
+  top: 70px;
+  border: #36322d 2px solid;
+}
+
+.Pelvis {
+  width: 47.5px;
+  height: 20px;
+  position: absolute;
+  background: url(https://i.pinimg.com/736x/cb/2d/ea/cb2dea1dc79ab6613bb3ea3ee33a5499.jpg);
+  background-position: center;
+  background-size: cover;
+  top: 153px;
+  left: 13px;
+  border-radius: 0 0 5px 5px;
+  /*border: #253158 2px solid;*/
+}
+
+.Pierna1_leg1, .Pierna1_leg2 {
+  width: 25px;
+  height: 60px;
+  background: url(https://i.pinimg.com/736x/cb/2d/ea/cb2dea1dc79ab6613bb3ea3ee33a5499.jpg);
+  background-position: center;
+  background-size: cover;
+  top: 0;
+  left: 12px;
+  position: absolute;
+  clip-path: polygon(3.57% -2.78%, 100.47% 1.66%, 77.86% 96.67%, 21.43% 101.11%);
+}
+
+.Pierna1_leg2 {
+  width: 15px;
+  height: 40px;
+  top: 0;
+  left: 0;
+}
+
+.Pierna2_leg1, .Pierna2_leg2 {
+  width: 25px;
+  height: 60px;
+  background: url(https://i.pinimg.com/736x/cb/2d/ea/cb2dea1dc79ab6613bb3ea3ee33a5499.jpg);
+  background-position: center;
+  background-size: cover;
+  top: 0;
+  right: 9px;
+  clip-path: polygon(3.57% -2.78%, 100.47% 1.66%, 77.86% 96.67%, 21.43% 101.11%);
+  position: absolute;
+}
+
+.Pierna2_leg2 {
+  width: 15px;
+  height: 40px;
+  top: 0;
+  right: -6px;
+}
+
+.torso_container {
+  position: absolute;
+  width: 70px;
+}
+
+.zapato1, .zapato2 {
+  width: 20px;
+  height: 10px;
+  position: absolute;
+  background-color: #36312e;
+  border-radius: 50% 50% 0 0;
+  top: 38px;
+  left: 2px;
+}
+
+.zapato2 {
+  left: auto;
+  right: -14px;
+}
+
+.arm1_ante, .arm1_pos {
+  width: 21px;
+  height: 45px;
+  background: url(https://image.freepik.com/foto-gratis/textura-tela-negra_1122-945.jpg);
+  background-position: center;
+  background-size: cover;
+  clip-path: polygon(3.57% -2.78%, 97.14% 2.22%, 84.29% 100%, 21.43% 101.11%);
+  top: 95px;
+  position: absolute;
+  left: -12px;
+}
+
+.hombro1, .hombro2 {
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background: url(https://image.freepik.com/foto-gratis/textura-tela-negra_1122-945.jpg);
+  background-position: center;
+  background-size: cover;
+  top: 80px;
+  position: absolute;
+  left: -12px;
+}
+
+.hombro2 {
+  left: auto;
+  right: -12px;
+}
+
+.arm2_ante, .arm2_pos {
+  width: 21px;
+  height: 45px;
+  background: url(https://image.freepik.com/foto-gratis/textura-tela-negra_1122-945.jpg);
+  background-position: center;
+  background-size: cover;
+  clip-path: polygon(3.57% -2.78%, 97.14% 2.22%, 84.29% 100%, 21.43% 101.11%);
+  top: 95px;
+  position: absolute;
+  right: -12px;
+}
+
+.arm2_pos, .arm1_pos {
+  width: 14px;
+  height: 30px;
+  top: 139px;
+  right: -9.5px;
+}
+
+.arm1_pos {
+  right: auto;
+  left: -7.5px;
+}
+
+.caminar {
+  transition: 0.4s all;
+  animation: walk 0.4s infinite forwards ease alternate;
+}
+
+.caminar11 {
+  transition: 0.4s all;
+  animation: walk 0.4s infinite forwards ease alternate-reverse;
+}
+
+.move {
+  animation: movemeX 4s alternate 1 ease forwards;
+}
