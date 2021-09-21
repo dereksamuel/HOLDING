@@ -76,6 +76,67 @@ body {
   box-shadow: inset 0px 0px 27px #f2dac85c;
 }
 
+.scene_3 {
+  background-color: rgb(252, 199, 85);
+}
+
+.scene3_animation {
+  animation: fadeBackground 1s 5 ease-in-out alternate;
+  animation-delay: 4s;
+}
+
+.scene_3 .dialog1_section3 {
+  background-color: #e7ebee;
+  border-radius: 25px;
+  padding: 10px;
+  position: absolute;
+  font-size: 11px;
+  top: 5px;
+  max-width: 260px;
+  text-align: center;
+  opacity: 0;
+  transition: 1s all;
+}
+
+.scene_3 .dialog1_section3 .triangule {
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+
+  border-left: 15px solid #e7ebee;
+  position: absolute;
+  right: 18px;
+  bottom: -18px;
+  transform: rotate(90deg);
+}
+
+.sky, .sky2 {
+  background: url(https://cdn.pngsumo.com/pequea-nube-blanca-en-2019-nubes-png-plantillas-para-fotos-y-nubes-png-1988_1290.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 233px;
+  height: 142px;
+  position: absolute;
+  top: 189px;
+  opacity: 0.4;
+  z-index: 5;
+  left: -88px;
+}
+
+.sk1 {
+  animation: 2 5s moveSky alternate;
+}
+
+.sk2 {
+  animation: 2 5s moveSky alternate-reverse;
+}
+
+.sky2 {
+  left: auto;
+  right: -88px;
+}
+
 @media screen and (max-width: 1368px) {
   body {
     display: block;

@@ -56,7 +56,7 @@
 
 @keyframes fade {
   0% {
-    opacity: 0;
+    opacity: 0.4;
   }
   100% {
     opacity: 0.8;
@@ -97,5 +97,137 @@
   }
   100% {
     transform: translateY(-5px);
+  }
+}
+
+@keyframes fadeBackground {
+  0% {
+    background-color: rgb(252, 199, 85);
+  }
+  100% {
+    background-color: rgb(241, 252, 85);
+  }
+}
+
+@keyframes moveSky {
+  0% {
+    transform: translate();
+  }
+  100% {
+    transform: translate(150px);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+    opacity: 0.5;
+  }
+  100% {
+    transform: rotate(460deg);
+    opacity: 1;
+  }
+}
+
+@keyframes toSuperTorso {
+  0% {
+    width: 70px;
+  }
+  100% {
+    width: 84px;
+  }
+}
+
+@keyframes toSuperPelvis {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: translateX(5px) scale(1.1, 1);
+  }
+}
+
+@keyframes toSuperArm {
+  0% {
+    transform: translate(0px);
+  }
+  100% {
+    transform: translate(20px, -15px) rotate(-35deg);
+  }
+}
+
+@keyframes toSuperArm1 {
+  0% {
+    transform: translate(0px);
+  }
+  100% {
+    transform: translate(-20px, -20px) rotate(40deg);
+  }
+}
+
+@keyframes toSuperArm1Chiqui {
+  0% {
+    transform: translateY(0);
+    transform-origin: right top;
+  }
+  100% {
+    transform: rotate(-70deg) translateY(-11px) translateX(7px);
+    transform-origin: right top;
+  }
+}
+
+@keyframes toSuperArm2Chiqui {
+  0% {
+    transform: translateY(0);
+    transform-origin: right top;
+  }
+  100% {
+    transform: rotate(70deg) translateY(7px);
+    transform-origin: right top;
+  }
+}
+
+@keyframes toSuperPierna2 {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(8px);
+  }
+}
+
+@keyframes toSuperTorsoWidth {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1, 1) translateX(4.8px);
+  }
+}
+
+@keyframes movementSuper {
+  0% {
+    opacity: 0.7;
+    transform: rotate(-10deg) scale(1.15, 1) translateX(25px) translateY(15px) translateZ(5px);
+  }
+  20% {
+    opacity: 0.6;
+    transform: rotate(10deg) scale(1.15, 0.98) translateX(25px) translateY(15px) translateZ(5px);
+  }
+  40% {
+    opacity: 0.8;
+    transform: rotate(-5deg) scale(1.15, 1) translateX(25px) translateY(15px) translateZ(5px);
+  }
+  60% {
+    opacity: 0.7;
+    transform: rotate(5deg) scale(1.15, 0.98) translateX(25px) translateY(15px) translateZ(5px);
+  }
+  80% {
+    opacity: 0.9;
+    transform: rotate(-1deg) scale(1.15, 1) translateX(25px) translateY(15px) translateZ(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0) scale(1.15, 0.98) translateX(25px) translateY(15px) translateZ(5px);
   }
 }

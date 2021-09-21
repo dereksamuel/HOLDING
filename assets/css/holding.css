@@ -78,6 +78,9 @@
   position: absolute;
   left: 6px;
   top: 20px;
+  transition: 1s all;
+  overflow: hidden;
+  z-index: 1;
   /*animation: parpadeo 1s infinite ease-in-out alternate;*/
 }
 
@@ -108,15 +111,23 @@
 
 .arm1_container {
   position: absolute;
-  left: 0px;
+  left: -19px;
+  width: 27px;
+  height: 109px;
+  top: 80px;
+  transition: all 0.5s;
 }
 
 .arm2_container {
   position: absolute;
-  right: 0px;
+  right: -19px;
+  width: 27px;
+  height: 109px;
+  top: 80px;
+  transition: all 0.5s;
 }
 
-.Holding .eye1::after, .Holding .eye2::after {
+.Holding .pupila1, .Holding .pupila2 {
   content: "";
   width: 5px;
   height: 5px;
@@ -126,6 +137,10 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+.movePupi {
+  animation: moveEyes 15s infinite alternate;
 }
 
 .noise {
@@ -274,9 +289,10 @@
   background-position: center;
   background-size: cover;
   clip-path: polygon(3.57% -2.78%, 97.14% 2.22%, 84.29% 100%, 21.43% 101.11%);
-  top: 95px;
+  top: 15px;
   position: absolute;
-  left: -12px;
+  right: 0px;
+  transition: 1s all;
 }
 
 .hombro1, .hombro2 {
@@ -286,14 +302,14 @@
   background: url(https://image.freepik.com/foto-gratis/textura-tela-negra_1122-945.jpg);
   background-position: center;
   background-size: cover;
-  top: 80px;
+  top: 0;
   position: absolute;
-  left: -12px;
+  right: 0;
 }
 
 .hombro2 {
   left: auto;
-  right: -12px;
+  right: 4px;
 }
 
 .arm2_ante, .arm2_pos {
@@ -303,31 +319,45 @@
   background-position: center;
   background-size: cover;
   clip-path: polygon(3.57% -2.78%, 97.14% 2.22%, 84.29% 100%, 21.43% 101.11%);
-  top: 95px;
+  top: 14px;
   position: absolute;
-  right: -12px;
+  right: 4px;
+  transition: 1s all;
 }
 
 .arm2_pos, .arm1_pos {
   width: 14px;
   height: 30px;
-  top: 139px;
-  right: -9.5px;
+  top: 0;
+  right: 0;
+  transition: 1s all;
 }
 
 .arm1_pos {
-  right: auto;
-  left: -7.5px;
+  right: 3.5px;
+}
+
+.arm2container, .arm1container {
+  position: absolute;
+  left: -1px;
+  top: 55px;
+  width: 22px;
+  height: 51px;
+  transition: 1s all;
+}
+
+.arm1container {
+  left: 5px;
 }
 
 .caminar {
   transition: 0.4s all;
-  animation: walk 0.4s infinite forwards ease alternate;
+  animation: walk 0.4s 8 forwards ease alternate;
 }
 
 .caminar11 {
   transition: 0.4s all;
-  animation: walk 0.4s infinite forwards ease alternate-reverse;
+  animation: walk 0.4s 8 forwards ease alternate-reverse;
 }
 
 .move {

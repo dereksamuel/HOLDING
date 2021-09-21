@@ -7,8 +7,8 @@
 
 .hand1 {
   position: absolute;
-  top: 169px;
-  left: -8px;
+  top: 28px;
+  left: 5.5px;
 }
 
 .fingers {
@@ -16,9 +16,9 @@
   height: 10px;
   background-color: rgb(200, 173, 138);
   clip-path: polygon(-1.43% -12.78%, 72.14% -7.78%, 59.29% 110%, 16.43% 111.11%);
-  top: 179px;
+  top: 37px;
   position: absolute;
-  left: -8px;
+  right: -3px;
 }
 
 .fingers2 {
@@ -26,13 +26,13 @@
   height: 10px;
   background-color: rgb(200, 173, 138);
   clip-path: polygon(-1.43% -12.78%, 72.14% -7.78%, 59.29% 110%, 16.43% 111.11%);
-  top: 179px;
+  top: 36px;
   position: absolute;
-  right: -14px;
+  right: -5px;
 }
 
 .hand2 {
   position: absolute;
-  top: 169px;
-  right: -15px;
+  top: 27px;
+  right: -6px;
 }

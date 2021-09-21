@@ -2,3 +2,27 @@
   transition: 1s all;
   animation: awesomeEyes 2 0.3s ease alternate;
 }
+
+.isawesomestatic {
+  transition: 0.5s all;
+  animation: awesomeEyes 2 0.2s ease alternate-reverse forwards;
+  animation-delay: 2.2s;
+}
+
+.sad1 {
+  animation: sadEye1 2 1s ease alternate-reverse forwards;
+}
+
+.sad2 {
+  animation: sadEye2 2 1s ease alternate-reverse forwards;
+}
+
+.interestingAction {
+  transition: 1s all;
+  animation: interesting 6 1s ease-in alternate;
+}
+
+.movePupis {
+  animation: satisfactorio 5s 2 ease-in-out alternate;
+  transition: 1s all;
+}

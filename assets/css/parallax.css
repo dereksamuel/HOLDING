@@ -1,0 +1,129 @@
+.parallax-container {
+  width: 100%;
+  height: 100%;
+  perspective: 8px;
+  perspective-origin: 50%;
+}
+
+.image {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transform: 0 50%;
+}
+
+.image__background {
+  width: 110%;
+  height: auto;
+  left: -15px;
+  transform: translateZ(0px) scale(1);
+  display: flex;
+  justify-content: center;
+}
+
+.image__background img {
+  width: 780px;
+  height: 780px;
+  position: absolute;
+  top: -250px;
+  left: -10px;
+  object-fit: cover;
+  filter: blur(2px);
+}
+
+.image__middle {
+  left: -163px;
+  transform: translateZ(5px) scale(0.375);
+  transform-origin: 50%;
+  top: 137px;
+  width: 192px;
+  height: 60px;
+  opacity: 0;
+  transition: 1d all;
+}
+
+.image__middle__all {
+  opacity: 1;
+}
+
+.card {
+  position: absolute;
+}
+
+.card .text {
+  position: absolute;
+  top: -35px;
+}
+
+.card p {
+  position: absolute;
+  top: 20px;
+  font-style: italic;
+}
+
+.card h3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: sans-serif;
+  font-weight: bold;
+  filter: blur(0.5px);
+  color: rgb(124, 247, 67);
+  text-shadow: 1px 1px 8px black;
+}
+
+.card .l {
+  top: -8px;
+  left: 33px;
+}
+
+.card .d {
+  top: -5px;
+  left: 45px;
+  transform: rotate(10deg);
+  font-size: 22px;
+}
+
+.card .h {
+  transform: rotate(-12deg);
+  left: -2px;
+  font-size: 22px;
+}
+
+.card .i {
+  transform: rotate(23deg);
+  left: 65px;
+  font-size: 25px;
+}
+
+.card .n {
+  transform: rotate(23deg) scale(1.5);
+  left: 75px;
+  top: 10px;
+  font-size: 28px;
+}
+
+.card .g {
+  transform: rotate(23deg) scale(1.8);
+  left: 106px;
+  top: 20px;
+  font-size: 30px;
+}
+
+.card .o {
+  top: -5px;
+  left: 15px;
+}
+
+.image__foreground {
+  transform: translateZ(2px) scale(0.8);
+  transform-origin: bottom;
+  left: 250px;
+  top: 20px;
+}
+
+.rollate {
+  transform-origin: center;
+  animation: rotate 5.5s ease-in 2 alternate;
+}

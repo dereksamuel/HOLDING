@@ -11,8 +11,10 @@
   <link rel="stylesheet" href="./assets/css/hands.css">
   <link rel="stylesheet" href="./assets/css/extra.css">
   <link rel="stylesheet" href="./assets/css/general_animations.css">
+  <link rel="stylesheet" href="./assets/css/parallax.css">
   <link rel="stylesheet" href="./assets/css/holding_actions.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="./assets/css/superholding.css">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,500;1,100;1,200;1,500&display=swap" rel="stylesheet"> 
 </head>
@@ -47,8 +49,12 @@
             <div class="oreja_2_lobulo_1"></div>
             <div class="oreja_2_lobulo_2"></div>
             <div class="face">
-              <div class="eye1"></div>
-              <div class="eye2"></div>
+              <div class="eye1">
+                <div class="pupila1"></div>
+              </div>
+              <div class="eye2">
+                <div class="pupila2"></div>
+              </div>
               <div class="face_2">
                 <div class="mouth"></div>
               </div>
@@ -78,37 +84,90 @@
                 <div class="zapato1"></div>
               </div>
             </div>
-            <div class="arm2_pos"></div>
-            <div class="arm1_container">
+            <div class="arm1_container" id="arm1">
               <div class="arm1_ante"></div>
-              <div class="arm1_pos"></div>
               <div class="hombro1"></div>
-              <div class="hands hand1"></div>
-              <div class="fingers"></div>
+              <div class="arm1container">
+                <div class="arm1_pos"></div>
+                <div class="hands hand1"></div>
+                <div class="fingers"></div>
+              </div>
             </div>
-            <div class="arm2_container">
+            <div class="arm2_container" id="arm2">
               <div class="arm2_ante"></div>
               <div class="hombro2"></div>
-              <div class="hands hand2"></div>
-              <div class="fingers2"></div>
+              <div class="arm2container">
+                <div class="arm2_pos"></div>
+                <div class="hands hand2"></div>
+                <div class="fingers2">
+                  <div class="carta dk"></div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
+        <div class="dialog1_section">
+          <p>Oh, llegaron los resultados médicos</p>
+          <div class="triangule"></div>
+        </div>
+        <div class="dialog2_section">
+          <p>No, ¿por qué? ¿cuántos días me quedan? yo no, yo no...</p>
+          <div class="triangule"></div>
+        </div>
+        <div class="dialog3_section">
+          <img src="https://www.educaciontrespuntocero.com/wp-content/uploads/2021/05/familias-destacada.jpg" alt="family" id="imgDialog3" class="imgDialog3" />
+          <p>Es solo que aún no estoy listo para despedirme, pero...</p>
+          <div class="buble1"></div>
+          <div class="buble2"></div>
+          <div class="buble3"></div>
+        </div>
         <div class="glow"></div>
-        <div class="table"></div>
+        <div class="table">
+          <div class="picture"></div>
+          <div class="carta" id="cart"></div>
+        </div>
         <div class="reloj"></div>
       </section>
-      <section class="bulletPoint" id="scene_3">
+      <section class="bulletPoint scene_3" id="scene_3">
         <div class="bulletPoint_tapa" id="three_tapa"></div>
-        Humm
+        <div class="sky"></div>
+        <div class="sky2"></div>
+        <div class="dialog1_section3">
+          <p>¿Por qué digo eso? si cada segundo es oro hagamos que lo valga, ahora seré...</p>
+          <div class="triangule"></div>
+        </div>
       </section>
       <section class="bulletPoint large" id="scene_4">
         <div class="bulletPoint_tapa" id="four_tapa"></div>
-        Humm
+        <div class="parallax-container">
+          <div class="image image__background">
+            <img src="https://t4.ftcdn.net/jpg/02/14/17/41/360_F_214174194_kvoSXsgIlPkLd1wNM1BPlnZMsV0b8OFi.jpg" alt="background" />
+            <img src="https://media.istockphoto.com/vectors/pop-art-retro-comic-yellow-background-lightning-blast-halftone-dots-vector-id955755768?k=20&m=955755768&s=170667a&w=0&h=2Fj9wFDdCHG7ZSlzfhpTU0Sa1kvcJhQgLtt5hAmfq9I=" alt="background" id="parallax_image" />
+          </div>
+
+          <div class="image image__middle">
+            <div class="card one">
+              <div class="text">
+                <h3 class="h">H</h3>
+                <h3 class="o">O</h3>
+                <h3 class="l">L</h3>
+                <h3 class="d">D</h3>
+                <h3 class="i">I</h3>
+                <h3 class="n">N</h3>
+                <h3 class="g">G</h3>
+              </div>
+              <p>El superhéroe que se aferra a la vida</p>
+            </div>
+          </div>
+
+          <div class="image image__foreground" id="fourHolding"></div>
+        </div>
       </section>
       <section class="bulletPoint" id="scene_5">
         <div class="bulletPoint_tapa" id="five_tapa"></div>
-        Humm
+        <article class="subText">
+          <p>Así nuestro héroe se enfrentó contra un dragón 🐲. Aunque en realidad ayudó a una ansiana a pasar la calle.</p>
+        </article>
       </section>
     </div>
   </div>
