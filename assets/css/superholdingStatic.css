@@ -165,7 +165,7 @@
   background: url(https://media.istockphoto.com/photos/texture-of-fire-on-a-black-background-picture-id851823958?b=1&k=6&m=851823958&s=170667a&w=0&h=7g6ym0T1xDpvRsLVmIR0b32QfGYz83yGkPDFFGa2UeY=);
 }
 
-.fire {
+.SuperNormal .fire {
   max-width: 50px;
   position: absolute;
   z-index: 10;
@@ -173,7 +173,7 @@
   top: 0;
   transform-origin: top right;
   transform: rotate(62deg);
-  animation: goToUp 1s infinite ease-in-out;
+  animation: goToUp 0.5s infinite ease-in-out;
 }
 
 .absoluteFigure {
@@ -184,7 +184,7 @@
   top: 190px;
 }
 
-.fire2 {
+.SuperNormal .fire2 {
   max-width: 50px;
   position: absolute;
   z-index: 10;
