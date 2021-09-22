@@ -128,11 +128,11 @@
 }
 
 .Holding .pupila1, .Holding .pupila2 {
-  content: "";
   width: 5px;
   height: 5px;
   border-radius: 50%;
   background-color: var(--color-black);
+  border: 1px solid green;
   position: absolute;
   left: 50%;
   top: 50%;

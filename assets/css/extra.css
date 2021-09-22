@@ -351,11 +351,11 @@
   background: aliceblue;
   width: 10px;
   height: 10px;
-  border-top: 1px solid #bdaa9b;
+  border-top: 1.8px solid #bdaa9b;
   transform: rotate(-45deg);
   position: absolute;
   right: 6px;
   top: 20px;
-  border-right: 1px solid #bdaa9b;
+  border-right: 1.8px solid #bdaa9b;
   overflow: hidden;
 }

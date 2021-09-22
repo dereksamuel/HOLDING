@@ -137,6 +137,17 @@ body {
   right: -88px;
 }
 
+.background {
+  position: absolute;
+}
+
+.SuperContainer {
+  position: absolute;
+  z-index: 5;
+  right: 37px;
+  transform: scale(0.7);
+}
+
 @media screen and (max-width: 1368px) {
   body {
     display: block;

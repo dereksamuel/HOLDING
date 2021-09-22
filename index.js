@@ -49,6 +49,7 @@ function play () {
   firstScene();
   secondScene();
   threeScene();
+  fourScene();
 }
 
 function firstScene () {
@@ -177,6 +178,38 @@ function threeScene () {
       clearTimeout(timer);
     }, 3000);
     $parallax_image.classList.add("rollate");
+  });
+}
+
+async function fourScene () {
+  const $scene_4 = document.querySelector("#scene_4");
+  const $scene_5 = document.querySelector("#scene_5");
+  const $parallax_image = document.getElementById("parallax_image");
+  const $Dragon = document.createElement("div");
+  const $SuperHoldingLocal = document.createElement("div");
+  const dragon = await (await fetch("./Dragon.html")).text();
+  const superHolding = await (await fetch("./SuperHoldingNormal.html")).text();
+  $Dragon.innerHTML = dragon;
+  $Dragon.classList.add("DragonContainer");
+  $SuperHoldingLocal.innerHTML = superHolding;
+  $SuperHoldingLocal.classList.add("SuperContainer");
+
+  $scene_5.appendChild($SuperHoldingLocal);
+  $scene_5.appendChild($Dragon);
+  
+  $parallax_image.addEventListener("animationend", () => {
+    $scene_4.classList.remove("selected");
+    $scene_4.querySelector(".bulletPoint_tapa").classList.remove("opacity-none");
+    $scene_5.querySelector(".bulletPoint_tapa").classList.add("opacity-none");
+    $scene_5.classList.add("selected");
+
+    const timer = setTimeout(() => {
+      $Dragon.classList.add("DragonContainerDK");
+      $SuperHoldingLocal.classList.add("SuperNormal");
+      $Dragon.querySelector(".ala").classList.add("fly");
+      $Dragon.querySelector(".ala1").classList.add("fly2");
+      clearTimeout(timer);
+    }, 2000);
   });
 }
 

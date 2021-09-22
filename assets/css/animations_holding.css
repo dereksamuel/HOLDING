@@ -23,7 +23,7 @@
 
 @keyframes moveEyes {
   0% {
-    transform: translate(0.5px, 0.5px);
+    transform: translate(0.2px, 0.2px);
   }
   100% {
     transform: translate(-5px, -5px);
@@ -91,5 +91,45 @@
   }
   100% {
     transform: translate(-1px, -3px);
+  }
+}
+
+@keyframes jump {
+  0% {
+    transform: translate(0) scale(0.8, 0.7);
+  }
+  100% {
+    transform: translate(-15px, 35px) scale(0.8, 0.7);
+  }
+}
+
+@keyframes jumpGorro {
+  0% {
+    transform: translate(0) scale(0.8, 0.7);
+  }
+  100% {
+    transform: translate(0, -10px) scale(0.8, 0.7);
+  }
+}
+
+@keyframes flexion {
+  0% {
+    transform: skewY(0);
+    transform-origin: top left;
+  }
+  100% {
+    transform: skewY(-53deg);
+    transform-origin: top left;
+  }
+}
+
+@keyframes flexionposleg {
+  0% {
+    transform: translate(0);
+    transform-origin: top right;
+  }
+  100% {
+    transform: rotate(-35deg) translate(5px, -15px);
+    transform-origin: top right;
   }
 }

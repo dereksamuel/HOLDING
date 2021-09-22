@@ -231,3 +231,26 @@
     transform: rotate(0) scale(1.15, 0.98) translateX(25px) translateY(15px) translateZ(5px);
   }
 }
+
+@keyframes jumpDragon {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-15px, 35px);
+  }
+}
+
+@keyframes goToUp {
+  0% {
+    transform: rotate(62deg) translate(1px, -50px);
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(62deg) translate(150px, 4px);
+    opacity: 0.2;
+  }
+}
