@@ -248,9 +248,19 @@
   }
   50% {
     opacity: 1;
+    transform: rotate(62deg) translate(1px, 40px);
   }
   100% {
-    transform: rotate(62deg) translate(150px, 4px);
     opacity: 0.2;
+    transform: rotate(62deg) translate(5px, 12px);
+  }
+}
+
+@keyframes atropella {
+  0% {
+    transform: translate(0px);
+  }
+  100% {
+    transform: translate(150px, 150px) scale(2.8);
   }
 }

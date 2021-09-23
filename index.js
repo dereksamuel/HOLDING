@@ -6,6 +6,7 @@ let $dialog3SecondScene = null;
 
 let $Holding = null;
 let $SuperHolding = null;
+let holding = null;
 let $pupila1;
 let $pupila2;
 
@@ -22,6 +23,7 @@ window.onload = async () => {
   $pupila1 = document.querySelector(".pupila1");
   $pupila2 = document.querySelector(".pupila2");
 
+  holding = response;
   $Holding = document.createElement("div");
   $Holding.innerHTML = response;
   $Holding.classList.add("big");
@@ -194,8 +196,8 @@ async function fourScene () {
   $SuperHoldingLocal.innerHTML = superHolding;
   $SuperHoldingLocal.classList.add("SuperContainer");
 
-  $scene_5.appendChild($SuperHoldingLocal);
-  $scene_5.appendChild($Dragon);
+  $scene_5.querySelector(".content").appendChild($SuperHoldingLocal);
+  $scene_5.querySelector(".content").appendChild($Dragon);
   
   $parallax_image.addEventListener("animationend", () => {
     $scene_4.classList.remove("selected");
@@ -210,6 +212,16 @@ async function fourScene () {
       $Dragon.querySelector(".ala1").classList.add("fly2");
       clearTimeout(timer);
     }, 2000);
+  });
+
+  $SuperHoldingLocal.addEventListener("animationend", () => {
+    $scene_5.querySelector(".ilusion").style.opacity = "0";
+    const timer = setTimeout(() => {
+      $scene_5.querySelector(".ilusion").style.display = "none";
+
+      $scene_5.querySelector(".reality").innerHTML += holding;
+      clearTimeout(timer);
+    }, 500);
   });
 }
 

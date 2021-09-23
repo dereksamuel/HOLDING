@@ -148,6 +148,83 @@ body {
   transform: scale(0.7);
 }
 
+.ilusion, .reality {
+  transition: 1s opacity;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+
+.reality {
+  z-index: 4;
+  perspective: 100px;
+}
+
+.calle {
+  transform-style: preserve-3d;
+  transform: rotateX(61deg) translate(-50% , -50%);
+  background: rgb(90, 90, 90);
+  background: url(https://thumbs.dreamstime.com/b/fondo-o-textura-gris-calle-superficial-de-carretera-asfalto-del-114466052.jpg);
+  width: 320px;
+  height: 394px;
+  position: absolute;
+  left: 50%;
+  top: 57px;
+  border-radius: 50px 50px 0 0;
+}
+
+#scene_5 .reality {
+  background: url(https://arc-anglerfish-arc2-prod-elespectador.s3.amazonaws.com/public/KBYL55RCBRDHHKAYTQWIC7TVUQ.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.calleAnden, .calleAnden2 {
+  transform-style: preserve-3d;
+  transform: rotateX(61deg) translate(-50% , -50%);
+  background: rgb(90, 90, 90);
+  padding: 35px;
+  width: 536px;
+  height: 386px;
+  position: absolute;
+  left: -259px;
+  top: 59px;
+  border-radius: 50px 50px 0 0;
+  border: 8px solid #f4d575;
+}
+
+.calleAnden2 {
+  left: auto;
+  right: -797px;
+}
+
+.car {
+  max-width: 79px;
+  transform-style: preserve-3d;
+  transform: rotateX(-21deg);
+  left: 0;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+
+.car-container {
+  left: 126px;
+  position: relative;
+  z-index: 8;
+  top: 69px;
+  /*animation: 7s ease-in atropella alternate 1 forwards;*/
+}
+
+.senor {
+  max-width: 14px;
+  left: 42px;
+  position: absolute;
+  top: 21px;
+  z-index: 1;
+}
+
 @media screen and (max-width: 1368px) {
   body {
     display: block;

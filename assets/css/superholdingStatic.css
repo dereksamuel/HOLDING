@@ -173,7 +173,7 @@
   top: 0;
   transform-origin: top right;
   transform: rotate(62deg);
-  animation: goToUp 0.5s infinite ease-in-out;
+  animation: goToUp 0.5s 35 ease-in-out;
 }
 
 .absoluteFigure {
@@ -182,6 +182,11 @@
   height: 50px;
   right: 15px;
   top: 190px;
+  opacity: 0;
+}
+
+.SuperNormal .absoluteFigure {
+  opacity: 1;
 }
 
 .SuperNormal .fire2 {
@@ -192,5 +197,5 @@
   top: 15px;
   transform-origin: top right;
   transform: rotate(62deg);
-  animation: goToUp 1s infinite ease-in-out;
+  animation: goToUp 1s 35 ease-in-out;
 }
