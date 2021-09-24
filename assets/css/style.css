@@ -225,6 +225,35 @@ body {
   z-index: 1;
 }
 
+.Helping {
+  transform: scale(0.9);
+  z-index: 9;
+  position: absolute;
+  left: 35px;
+}
+
+.Helper {
+  bottom: -108px;
+  position: relative;
+  left: 70px;
+  z-index: 10;
+}
+
+.Helping .mouth {
+  border-radius: 2px 10px 25px 25px;
+  background: rgb(181, 139, 139);
+  width: 8px;
+  height: 5px;
+  transform: rotate(19deg) translate(-50%, -50%);
+  position: absolute;
+  left: 13px;
+  top: 10px;
+}
+
+.large_secondary {
+  grid-column: 2 / span 3;
+}
+
 @media screen and (max-width: 1368px) {
   body {
     display: block;

@@ -1,4 +1,7 @@
+import { start } from "./assets/scenes/index.js";
+
 const $app = document.getElementById("app");
+const $scene1Comic = document.getElementById("sceneComic1");
 
 let $dialog1SecondScene = null;
 let $dialog2SecondScene = null;
@@ -214,13 +217,54 @@ async function fourScene () {
     }, 2000);
   });
 
-  $SuperHoldingLocal.addEventListener("animationend", () => {
+  $SuperHoldingLocal.addEventListener("animationend", async () => {
     $scene_5.querySelector(".ilusion").style.opacity = "0";
+    const Anciana = await (await (await fetch("./Anciana.html")).text());
+    const $Anciana = document.createElement("div");
+    $Anciana.innerHTML = Anciana;
+    $Anciana.style.animation = "movemeAncianoX 9s alternate 1 ease forwards";
+    $Anciana.classList.add("Helper");
+
+    $scene_5.querySelector(".reality").appendChild($Anciana);
     const timer = setTimeout(() => {
+      const $HoldingGood = document.createElement("div");
+      $HoldingGood.innerHTML = holding;
+      $HoldingGood.style.animation = "movemeX 8s alternate 1 ease forwards";
+
+      const $pupila11 = $HoldingGood.querySelector(".pupila1");
+      const $pupila22 = $HoldingGood.querySelector(".pupila2");
+
+      $pupila11.classList.add("movePupis");
+      $pupila22.classList.add("movePupis");
+
+      const $pierna_2 = $HoldingGood.querySelector("#pierna2");
+      const $pierna_1 = $HoldingGood.querySelector("#pierna1");
+      $HoldingGood.classList.add("Helping");
       $scene_5.querySelector(".ilusion").style.display = "none";
 
-      $scene_5.querySelector(".reality").innerHTML += holding;
+      $HoldingGood.classList.add("move");
+      $pierna_2.classList.add("caminar");
+      $pierna_1.classList.add("caminar11");
+      $pierna_2.querySelector(".pierna22").classList.add("moveleg12");
+      $pierna_1.querySelector(".pierna11").classList.add("moveleg11");
+      $scene_5.querySelector(".reality").appendChild($HoldingGood);
       clearTimeout(timer);
+
+      $pierna_2.addEventListener("animationend", async () => {
+        const scene2Comic = await (await fetch("./assets/scenes/scene2.html")).text();
+
+        clearableClasses($pierna_2);
+        $pierna_2.classList.remove("caminar");
+        $pierna_1.classList.remove("caminar11");
+        $pierna_2.querySelector(".pierna22").classList.remove("moveleg12");
+        $pierna_1.querySelector(".pierna11").classList.remove("moveleg11");
+        const timeout = setTimeout(() => {
+          $scene1Comic.style.visibility = "hidden";
+          $app.innerHTML = scene2Comic;
+          clearTimeout(timeout);
+          start({ holdingParameter: holding, });
+        }, 7000);
+      });
     }, 500);
   });
 }

@@ -1,0 +1,84 @@
+.Anciana {
+  height: 150px;
+  width: 100px;
+  position: absolute;
+}
+
+.Head_Anciana {
+  width: 70px;
+  height: 70px;
+  background: #eedeb8;
+  border-radius: 50px 50px 41px 50px;
+  box-shadow: inset 1px 1px 14px #44352b8f;
+  position: absolute;
+  z-index: 2;
+  top: 10px;
+}
+
+.pelo_Anciana {
+  position: absolute;
+  width: 80px;
+  height: 50px;
+}
+
+.Apelo {
+  width: 100%;
+  height: 33px;
+  background: #a894a8;
+  border-radius: 50px 50px 0 0;
+}
+
+.Bpelo {
+  height: 100%;
+  width: 30px;
+  background: #a894a8;
+}
+
+.lentes {
+  position: absolute;
+  width: 50px;
+  height: 30px;
+  right: -10px;
+  top: 30px;
+}
+
+.circle {
+  width: 24px;
+  height: 24px;
+  border: black 2px solid;
+  border-radius: 50%;
+  background-color: azure;
+  position: absolute;
+}
+
+.Twocircle {
+  right: 1px;
+}
+
+.Body_Anciana {
+  position: absolute;
+  bottom: -10px;
+  width: 75px;
+  height: 90px;
+  background: url(https://static.vecteezy.com/system/resources/previews/001/340/247/non_2x/beautiful-flower-and-leaf-textures-pattern-free-vector.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50px 50px 5px 5px;
+  z-index: 1;
+}
+
+.shoes {
+  width: 30px;
+  height: 15px;
+  border-radius: 9px;
+  background-color: #603610;
+  position: absolute;
+  bottom: -12px;
+  transform-origin: left top;
+  transform: skewY(0deg);
+  transform-style: preserve-3d;
+}
+
+.Bshoe {
+  right: 0px;
+}
