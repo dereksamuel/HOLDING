@@ -25,7 +25,7 @@ const firstScene = () => {
 
   $content_1.appendChild($Train);
   $content_1.appendChild($Holding);
-  $scene22.appendChild($Holding2);
+  $scene22.querySelector(".content").appendChild($Holding2);
   
   $six_circle.addEventListener("animationend", () => {
     const $scene12 = document.getElementById("scene12");
@@ -91,6 +91,10 @@ const secondScene = ($Holding2) => {
       $scene22.classList.add("enfermo");
       clearTimeout(timer);
     }, 1500);
+  });
+
+  $Holding2.querySelector("#arm2").addEventListener("animationend", () => {
+    $scene22.querySelector(".content").style.opacity = "0";
   });
 };
 

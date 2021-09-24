@@ -1,0 +1,134 @@
+.dolorHombro::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: red;
+  animation: 3s 1 dangerPoint ease-in-out alternate forwards;
+  position: absolute;
+  z-index: 15;
+  border-radius: 50%;
+  left: 18px;
+  top: 100px;
+}
+
+.fury {
+  transform: rotate(20deg);
+  transition: 1s all;
+}
+
+.caer {
+  animation: caer 1.5s 1 alternate forwards ease;
+}
+
+.caerScale {
+  transform: rotate(0) translate(0, 142px) scale(4);
+  transform-origin: 30px 121px;
+  transition: 1s all;
+  animation: none;
+}
+
+.heat::after {
+  content: "\2665";
+  width: 12px;
+  height: 12px;
+  transform: rotate(45deg);
+  color: rgb(221, 68, 68);
+  position: absolute;
+  top: -1px;
+  left: -20px;
+  animation: beating 2s ease forwards 4;
+  z-index: 4;
+}
+
+@keyframes beating {
+  0% {
+  	transform: rotate(45deg) scale(1.8);
+  }
+  50% {
+    transform: rotate(45deg) scale(2);
+  }
+  100% {
+  	transform: rotate(45deg) scale(1.8);
+  }
+}
+
+.sixtt {
+  height: 267px;
+  background: linear-gradient(0deg, rgb(55, 56, 41) 0%, rgb(54, 40, 40) 33%, rgb(81, 47, 92) 100%);
+  position: absolute;
+  width: 745px;
+  transition: 1s transform;
+  transform-origin: left bottom;
+}
+
+.caer .arm2_container {
+  animation: caerArm 1.5s 1 alternate forwards ease-in-out;
+}
+
+.caer .pupila1, .caer .pupila2 {
+  animation: sorprendidoMal 1s 5 alternate forwards ease;
+}
+
+.caer .ceja1 {
+  transform: rotate(-21deg);
+}
+
+.caer .ceja2 {
+  transform: rotate(21deg);
+}
+
+.enfermo {
+  animation: sick 1s 3 alternate backwards ease-out;
+}
+
+@keyframes dangerPoint {
+  0% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes caer {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: rotate(37deg) translate(0, 113px);
+  }
+}
+
+@keyframes caerArm {
+  0% {
+    transform: translate(0);
+    transform-origin: right top;
+  }
+  100% {
+    transform: rotate(-35deg) translate(-8px, -21px);
+    transform-origin: right top;
+  }
+}
+
+@keyframes sorprendidoMal {
+  0% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(0.5);
+  }
+}
+
+@keyframes sick {
+  0% {
+    filter: blur(0);
+  }
+  100% {
+    filter: blur(2px);
+  }
+}
