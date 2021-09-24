@@ -68,7 +68,7 @@
   left: -0.5px;
 }
 
-.Holding .eye1, .Holding .eye2 {
+.Holding .eye1, .Holding .eye2, .Consuelo .eye1, .Consuelo .eye2 {
   border-radius: 5px 25px 5px 25px;
   background: aliceblue;
   width: 10px;
@@ -84,7 +84,15 @@
   /*animation: parpadeo 1s infinite ease-in-out alternate;*/
 }
 
-.Holding .eye2 {
+.Consuelo .eye1, .Consuelo .eye2 {
+  z-index: 6;
+  border-top: none;
+  background-color: #7a5873;
+  border-bottom: 2px solid #222120;
+  border-left: 2px solid #222120;
+}
+
+.Holding .eye2, .Consuelo .eye2 {
   left: auto;
   right: 6px;
 }

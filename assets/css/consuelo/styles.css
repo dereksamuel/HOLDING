@@ -1,0 +1,206 @@
+.Consuelo {
+  position: relative;
+  width: 120px;
+  height: 192px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: -25px;
+  right: -115px;
+  transform-origin: bottom center;
+  animation: alternate ease-in-out recostar 6s 1 forwards;
+}
+
+.Consuelo .mouth {
+  background-color: brown;
+}
+
+.Consuelo .Consuelo_Head_content {
+  background: #b7907d;
+  width: 39px;
+  height: 52px;
+  border-radius: 50px 50px 60px 60px;
+  border: 2px solid #644545;
+  box-shadow: inset 1px 1px 10px #864131;
+  z-index: 5;
+  position: absolute;
+}
+
+.Consuelo .cuello {
+  background: #b7907d;
+  border: 2px solid #644545;
+  box-shadow: inset 1px 1px 10px #864131;
+  height: 25px;
+  width: 20px;
+}
+
+.Consuelo .mouth {
+  z-index: 7;
+  bottom: 10px;
+  height: 5px;
+  position: absolute;
+  left: 10px;
+  top: auto;
+  border-radius: 0 0 5px 5px;
+  transform: none;
+}
+
+.Consuelo .Consuelo_cabello {
+  width: 50px;
+  height: 70px;
+  position: absolute;
+  left: -6px;
+  top: -8px;
+}
+
+.cabello1C {
+  width: 39px;
+  height: 18px;
+  background-color: #2f2828;
+  border-radius: 50px 50px 0 0;
+  position: absolute;
+  z-index: 5;
+  left: 6px;
+  top: 2px;
+}
+
+.cabello2C {
+  width: 27px;
+  height: 15px;
+  background-color: #2f2828;
+  border-radius: 50px 50px 10px 13px;
+  position: absolute;
+  z-index: 5;
+  left: 12px;
+  top: 10px;
+}
+
+.cabello3C {
+  width: 31px;
+  height: 20px;
+  background-color: #2f2828;
+  border-radius: 50px 50px 10px 13px;
+  position: absolute;
+  z-index: 0;
+  left: 10px;
+  bottom: 2px;
+}
+
+.Consuelo .noise {
+  z-index: 7;
+  width: 6px;
+  border-bottom: 15px solid #a3705e;
+}
+
+.Consuelo_Head {
+  position: relative;
+  width: 39px;
+  height: 52px;
+}
+
+.Consuelo .ceja1, .Consuelo .ceja2 {
+  z-index: 7;
+  top: 18px;
+}
+
+.Consuelo_body {
+  width: 50px;
+  height: 70px;
+  position: relative;
+}
+
+.Consuelo_body_content {
+  width: 50px;
+  height: 70px;
+  background-color: #ec5454;
+  position: absolute;
+  z-index: 1;
+  clip-path: polygon(48% 15.71%, 80% 15.72%, 96% 46.43%, 82% 65.72%, 94% 97.14%, 50% 97.14%, 12% 97.14%, 24.00% 67.14%, 6% 46.43%, 20% 15.71%);
+}
+
+.Consuelo .cadera_abajo {
+  clip-path: polygon(52% 15.71%, 94% 14.2%, 96% 46.43%, 98% 75.72%, 96% 97.15%, 52% 98.66%, 6% 97.15%, 4% 73.81%, 6% 46.43%, 12.00% 14.19%);
+  width: 50px;
+  height: 68px;
+  background-color: aquamarine;
+  position: absolute;
+  bottom: 14px;
+  z-index: 0;
+}
+
+.Consuelo .leg1 {
+  height: 88px;
+  width: 18px;
+  background: #b58d7b;
+  border: 1px solid #644545;
+  box-shadow: 1px 1px 10px inset black;
+  bottom: -72px;
+  position: absolute;
+  left: 39px;
+  clip-path: polygon(3.57% -2.78%, 97.14% 2.22%, 84.29% 100%, 21.43% 101.11%);
+}
+
+.Consuelo .leg2 {
+  height: 88px;
+  width: 18px;
+  background: #b58d7b;
+  border: 1px solid #644545;
+  box-shadow: 1px 1px 10px inset black;
+  bottom: -72px;
+  position: absolute;
+  right: 35px;
+  clip-path: polygon(3.57% -2.78%, 97.14% 2.22%, 84.29% 100%, 21.43% 101.11%);
+}
+
+.Consuelo .arm1C, .Consuelo .arm2C, .Consuelo .arm1C_pos, .Consuelo .arm2C_pos {
+  width: 14px;
+  height: 39px;
+  background: #ad806e;
+  border-radius: 10px 10px 0 0;
+  position: absolute;
+  z-index: 0;
+  left: -2px;
+  top: 12px;
+  transform-origin: right top;
+  z-index: 2;
+  transform: rotate(14deg);
+  clip-path: polygon(3.57% -2.78%, 97.14% 2.22%, 84.29% 100%, 21.43% 101.11%);
+}
+
+.Consuelo .arm1C_pos, .Consuelo .arm2C_pos {
+  top: 38px;
+  transform: rotate(-64deg);
+  width: 10px;
+  height: 30px;
+  left: -15px;
+}
+
+.Consuelo .arm2C_pos {
+  transform-origin: left top;
+  left: auto;
+  transform: rotate(64deg);
+  right: -15px;
+}
+
+.Consuelo::after, .Consuelo::before {
+  content: "";
+  width: 12px;
+  height: 6px;
+  background-color: #a3705e;
+  position: absolute;
+  z-index: 9;
+  border-radius: 50px 50px 50px 0;
+  top: 104px;
+}
+
+.Consuelo::after {
+  top: 104px;
+  border-radius: 50px 50px 0px 50px;
+}
+
+.Consuelo .arm2C {
+  left: auto;
+  right: -2px;
+  transform-origin: left top;
+  transform: rotate(-14deg);
+}

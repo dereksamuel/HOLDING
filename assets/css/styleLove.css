@@ -1,0 +1,50 @@
+.love {
+  background: rgb(120,125,9);
+  background: linear-gradient(0deg, rgba(120,125,9,1) 0%, rgba(121,9,9,1) 33%, rgba(196,0,255,1) 100%);
+  box-shadow: inset 1px 1px 50px black;
+}
+
+.love .Holding .pierna2 {
+  transform: rotate(-38deg);
+}
+
+.love .Holding .pierna1 {
+  transform: rotate(-32deg);
+}
+
+.love .Holding::after, .love .Holding::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #e6636394;
+  position: absolute;
+  z-index: 11;
+  border-radius: 50%;
+  top: 33px;
+  left: 43px;
+  animation: alternate ease-in-out sonrojar 6s 1 forwards;
+}
+
+.love .Holding::before {
+  left: auto;
+  right: 43px;
+}
+
+.sofa1, .sofa2 {
+  width: 230px;
+  border-radius: 20px;
+  position: absolute;
+  z-index: 0;
+}
+
+.sofa1 {
+  background-color: rgb(107, 161, 85);
+  height: 110px;
+  top: 80px;
+}
+
+.sofa2 {
+  height: 70px;
+  bottom: 40px;
+  background-color: rgb(144, 161, 85);
+}
