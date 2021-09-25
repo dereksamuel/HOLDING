@@ -87,14 +87,25 @@ const secondScene = ($Holding2) => {
         $Holding2.querySelector(".Holding").classList.add("caerScale");
         $Holding2.querySelector("#arm2").classList.add("heat");
         clearTimeout(timer2);
-      }, 2500);
+        const timer3 = setTimeout(() => {
+          threeScene($Holding2, $scene22);
+          clearTimeout(timer3);
+        }, 4500);
+      }, 3400);
       $scene22.classList.add("enfermo");
       clearTimeout(timer);
     }, 1500);
   });
+};
 
-  $Holding2.querySelector("#arm2").addEventListener("animationend", () => {
-    $scene22.querySelector(".content").style.opacity = "0";
+const threeScene = ($Holding2, $scene22) => {
+  const $scene32 = document.querySelector("#scene32");
+
+  $Holding2.querySelector(".Holding").addEventListener("animationend", () => {
+    $scene22.querySelector(".bulletPoint_tapa").classList.remove("opacity-none");
+
+    $scene32.classList.add("select");
+    $scene32.querySelector(".bulletPoint_tapa").classList.add("opacity-none");
   });
 };
 

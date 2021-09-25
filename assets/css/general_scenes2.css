@@ -21,7 +21,7 @@
 }
 
 .caerScale {
-  transform: rotate(0) translate(0, 142px) scale(4);
+  transform: rotate(0) translate(-195px, 142px) scale(4);
   transform-origin: 30px 121px;
   transition: 1s all;
   animation: none;
