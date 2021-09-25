@@ -3,8 +3,29 @@ let holding = null;
 let consuelo = null;
 let $HoldingHuman = null;
 
+let $Dragon = null;
+let $SuperHoldingLocal = null;
+let dragon = null;
+let superHolding = null;
+
 const start = async ({ holdingParameter }) => {
+  const $scene32 = document.querySelector("#scene32");
   holding = holdingParameter;
+
+  $Dragon = document.createElement("div");
+  $SuperHoldingLocal = document.createElement("div");
+  dragon = await (await fetch("./Dragon.html")).text();
+  superHolding = await (await fetch("./SuperHoldingNormal.html")).text();
+
+  $Dragon.innerHTML = dragon;
+  $Dragon.classList.add("DragonContainer");
+
+  $SuperHoldingLocal.innerHTML = superHolding;
+  $SuperHoldingLocal.classList.add("SuperContainer");
+
+  $scene32.querySelector(".content").appendChild($SuperHoldingLocal);
+  $scene32.querySelector(".content").appendChild($Dragon);
+
   train = await (await fetch("./assets/scenes/Train.html")).text();
   consuelo = await (await fetch("./Consuelo.html")).text();
   firstScene();
@@ -98,15 +119,95 @@ const secondScene = ($Holding2) => {
   });
 };
 
-const threeScene = ($Holding2, $scene22) => {
+const threeScene = async ($Holding2, $scene22) => {
   const $scene32 = document.querySelector("#scene32");
+
+  const $dialog1 = $scene32.querySelector(".dialog_section_21");
+  const $dialog2 = $scene32.querySelector(".dialog2_section_22");
+  const $dialog3 = $scene32.querySelector(".dialog2_section_23");
 
   $Holding2.querySelector(".Holding").addEventListener("animationend", () => {
     $scene22.querySelector(".bulletPoint_tapa").classList.remove("opacity-none");
+    $scene22.classList.remove("selected");
 
-    $scene32.classList.add("select");
+    $scene32.classList.add("selected");
+    $dialog1.style.animation = "ocultarChat 12s forwards 1 ease alternate";
     $scene32.querySelector(".bulletPoint_tapa").classList.add("opacity-none");
+    const timer = setTimeout(() => {
+      $Dragon.classList.add("DragonContainerDK");
+      $SuperHoldingLocal.classList.add("SuperNormal");
+      $SuperHoldingLocal.style.right = "100px";
+      $Dragon.querySelector(".ala").classList.add("fly");
+      $Dragon.querySelector(".ala1").classList.add("fly2");
+      clearTimeout(timer);
+    }, 2000);
   });
+  
+  $SuperHoldingLocal.addEventListener("animationend", () => {
+    $dialog1.style.animation = "none";
+    $dialog2.style.animation = "ocultarChatPoco 10s forwards 1 ease alternate";
+    $SuperHoldingLocal.style.animation = "none";
+    $SuperHoldingLocal.style.transform = "translate(0, 75px) scale(0.8, 0.7)";
+
+    $SuperHoldingLocal.querySelector(".fire").style.opacity = "0";
+    $SuperHoldingLocal.querySelector(".fire2").style.opacity = "0";
+    $SuperHoldingLocal.querySelector(".fire").style.animation = "none";
+    $SuperHoldingLocal.querySelector(".fire2").style.animation = "none";
+
+    $SuperHoldingLocal.querySelector(".Pierna2_leg1").style.animation = "none";
+    $SuperHoldingLocal.querySelector(".Pierna1_leg1").style.animation = "none";
+    $SuperHoldingLocal.querySelector(".pierna22").style.animation = "none";
+    $SuperHoldingLocal.querySelector(".pierna11").style.animation = "none";
+
+    $SuperHoldingLocal.querySelector(".arm2_container").style.transform = "translate(-7px, -2px)";
+    $SuperHoldingLocal.querySelector(".arm1_container").style.transform = "translate(7px, -2px)";
+    $SuperHoldingLocal.querySelector(".arm2container").style.animation = "none";
+    $SuperHoldingLocal.querySelector(".arm1container").style.animation = "none";
+    $SuperHoldingLocal.querySelector(".gorro").style.animation = "none";
+  });
+
+
+  $dialog2.addEventListener("animationend", () => {
+    $Dragon.classList.add("DragonAtack");
+    const timer12 = setTimeout(() => {
+      $SuperHoldingLocal.querySelector(".arm2_container").style.transform = "translate(1px, -9px) rotate(102deg)";
+      $SuperHoldingLocal.querySelector(".arm1_container").style.transform = "translate(34px, -9px) rotate(85deg)";
+      $SuperHoldingLocal.style.transition = "8s all";
+      $SuperHoldingLocal.style.transform = "translate(224px, 45px) scale(0.8, 0.7)";
+      $scene32.querySelector(".FireConsecutive").style.animation = "1s fireGun forwards ease-in 3";
+      $scene32.querySelector(".pows #img1").style.opacity = "1";
+      $scene32.querySelector(".pows #img1").style.transition = "1s";
+      $scene32.querySelector(".pows #img2").style.opacity = "1";
+      $scene32.querySelector(".pows #img2").style.transition = "2s";
+      $scene32.querySelector(".pows #img3").style.opacity = "1";
+      $scene32.querySelector(".pows #img3").style.transition = "3s";
+      $dialog3.style.animation = "ocultarChatPoco 6s backwards 1 ease alternate";
+      const timer33 = setTimeout(() => {
+        $Dragon.querySelector(".ala").classList.remove("fly");
+        $Dragon.querySelector(".ala1").classList.remove("fly2");
+        fourScene();
+        clearTimeout(timer33);
+      }, 3000);
+      clearTimeout(timer12);
+    }, 1800);
+  });
+};
+
+const fourScene = () => {
+  const $scene32 = document.querySelector("#scene32");
+  const $scene42 = document.querySelector("#scene42");
+
+  $scene32.classList.remove("selected");
+  $scene32.querySelector(".bulletPoint_tapa").classList.remove("opacity-none");
+
+  $scene42.classList.remove("selected");
+  $scene42.querySelector(".bulletPoint_tapa").classList.remove("opacity-none");
+
+  $scene42.querySelector(".content").appendChild($SuperHoldingLocal);
+  $SuperHoldingLocal.querySelector(".arm2_container").style.transform = "translate(-7px, -2px)";
+  $SuperHoldingLocal.querySelector(".arm1_container").style.transform = "translate(7px, -2px)";
+  $SuperHoldingLocal.style.transition = "1s all";
+  $SuperHoldingLocal.classList.add("HoldingHerido");
 };
 
 export {

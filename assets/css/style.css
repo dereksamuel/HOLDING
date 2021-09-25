@@ -254,6 +254,15 @@ body {
   grid-column: 2 / span 3;
 }
 
+.large_three {
+  grid-column: 3 / span 2;
+  background: linear-gradient(0deg, rgb(230, 231, 207) 0%, rgba(121,9,9,1) 33%, rgb(230, 192, 69) 100%);
+}
+
+.large_three + .bulletPoint {
+  background: linear-gradient(0deg, rgb(230, 231, 207) 0%, rgba(121,9,9,1) 33%, rgb(230, 192, 69) 100%);
+}
+
 @media screen and (max-width: 1368px) {
   body {
     display: block;

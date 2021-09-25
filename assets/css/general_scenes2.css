@@ -27,6 +27,55 @@
   animation: none;
 }
 
+.dialog_section_21, .dialog2_section_22, .dialog2_section_23 {
+  background-color: aliceblue;
+  border-radius: 5px;
+  padding: 10px;
+  position: absolute;
+  top: 79px;
+  font-size: 10px;
+  max-width: 141px;
+  right: 168px;
+  opacity: 0;
+}
+
+.dialog_section_21 .triangule, .dialog2_section_22 .triangule, .dialog2_section_23 .triangule {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid aliceblue;
+  position: absolute;
+  right: -11px;
+  bottom: 7px;
+  transform: rotate(90deg);
+  z-index: 5;
+}
+
+/*.dialog_section_21 {
+  animation: ocultarChat 10s forwards 1 ease alternate;
+}
+
+.dialog2_section_22 {
+  animation: ocultarChat 20s forwards 1 ease alternate;
+}
+
+.dialog2_section_23 {
+  animation: ocultarChat 32s forwards 1 ease alternate;
+}*/
+
+.dialog2_section_22 .triangule, .dialog2_section_23 .triangule {
+  border-top: 15px solid rgb(32, 32, 32);
+  border-bottom: none;
+  left: -14px;
+}
+
+.dialog2_section_22, .dialog2_section_23 {
+  background-color: rgb(32, 32, 32);
+  color: aliceblue;
+  opacity: 0;
+}
+
 .heat::after {
   content: "\2665";
   width: 12px;
@@ -49,6 +98,27 @@
   }
   100% {
   	transform: rotate(45deg) scale(1.8);
+  }
+}
+
+@keyframes ocultarChat {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes ocultarChatPoco {
+  0% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
@@ -81,6 +151,101 @@
   animation: sick 1s 3 alternate backwards ease-out;
 }
 
+.DragonAtack {
+  transform: scale(2) translate(84px, 40px);
+  transform-origin: top;
+  transition: 2s all;
+  animation: none;
+}
+
+.DragonAtack .Dragon__head .eye2 {
+  border-radius: 50% 36px 19px 28px;
+  animation: disparoEnMarcha 2s 3 alternate forwards ease-in-out;
+}
+
+.DragonAtack .Dragon::after {
+  content: "";
+  width: 167px;
+  height: 99px;
+  background: url(https://acegif.com/wp-content/gifs/fire-77.gif);
+  display: block;
+  position: absolute;
+  right: -69px;
+  top: -8px;
+  z-index: 5;
+  background-size: contain;
+  animation: 8s alternate fireGun forwards ease-in;
+  background-position: left;
+  background-repeat: no-repeat;
+  transition: 1s all;
+  /*filter: blur(1px);*/
+}
+
+.FireConsecutive {
+  width: 350px;
+  height: 250px;
+  background: url(https://acegif.com/wp-content/gifs/fire-77.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 1s all;
+  position: absolute;
+  z-index: 6;
+  top: 0;
+  opacity: 0;
+}
+
+.DragonAtack .mouth, .DragonAtack .ties {
+  transition: 2s all;
+  transform: rotate(18deg) translateY(-4px);
+}
+
+.Dragon .mouth2 {
+  transition: 2s all;
+  transform: rotate(18deg) translate(5px, 7px);
+}
+
+.pows {
+  position: absolute;
+  top: 0;
+}
+
+.pows img {
+  max-width: 100px;
+  opacity: 0;
+  border-radius: 50%;
+  transform: scale(0.5);
+}
+
+.pows img:nth-child(2) {
+  transform: scale(0.8);
+}
+
+.pows img:nth-child(3) {
+  transform: scale(1.05);
+}
+
+.HoldingHerido {
+  transform: translate(-45px, 148px) rotate(64deg);
+  animation: 1 1s arrastrar ease-in-out alternate;
+}
+
+.HoldingHerido .gorro {
+  opacity: 1;
+}
+
+.HoldingHerido .anti1 {
+  background: none;
+}
+
+.HoldingHerido .face {
+  box-shadow: 5px 11px 6px inset #a64673;
+}
+
+.HoldingHerido .arm1_container .arm1_ante, .HoldingHerido .arm2_container .arm2_ante, .HoldingHerido .arm1_container .arm1_pos, .HoldingHerido .arm2_container .arm2_pos{
+  background-color: rgb(224, 194, 155);
+  box-shadow: 1px 1px 10px inset #d05376;
+}
+
 @keyframes dangerPoint {
   0% {
     transform: scale(1.2);
@@ -92,6 +257,32 @@
   100% {
     transform: scale(1);
     opacity: 0;
+  }
+}
+
+@keyframes arrastrar {
+  0% {
+    transform: translate(-45px, 148px) rotate(64deg);
+  }
+  100% {
+    transform: translate(98px, 148px) rotate(59deg);
+  }
+}
+
+@keyframes fireGun {
+  0% {
+    transform: translate(0, -51px) rotate(-90deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(400px, -51px) rotate(-90deg);
+    opacity: 1;
   }
 }
 
@@ -112,6 +303,17 @@
   100% {
     transform: rotate(-35deg) translate(-8px, -21px);
     transform-origin: right top;
+  }
+}
+
+@keyframes disparoEnMarcha {
+  0% {
+    background-color: yellow;
+    box-shadow: 1px 1px 10px yellow;
+  }
+  100% {
+    background-color: rgb(243, 78, 28);
+    box-shadow: 1px 1px 10px rgb(255, 0, 0);
   }
 }
 

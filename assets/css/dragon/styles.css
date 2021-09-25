@@ -68,7 +68,7 @@
   bottom: -3px;
   transform: rotate(18deg);
   border-top: 5px #8b5151 solid;
-  box-shadow: inset -20px -2px 5px rgba(68, 136, 60, 0.541);
+  box-shadow: inset 1px 1px 10px rgb(248, 232, 13);
 }
 
 .Dragon__head .eye1 {
