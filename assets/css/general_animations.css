@@ -1,3 +1,5 @@
+/*------- TRUENA para la primera escena -------*/
+
 @keyframes truena {
   0% {
     background: rgb(2,0,36);
@@ -6,6 +8,7 @@
     background: rgb(135, 131, 219);
   }
 }
+
 
 @keyframes ray {
   0% {
@@ -109,6 +112,8 @@
   }
 }
 
+/*------- SCENE 3 -------*/
+
 @keyframes awesomeEyes {
   0% {
     transform: translateY(0);
@@ -135,6 +140,8 @@
     transform: translate(150px);
   }
 }
+
+/*------- animations for SUPERHOLDING ATACK on scene 5 -------*/
 
 @keyframes rotate {
   0% {
@@ -273,6 +280,8 @@
     transform: rotate(62deg) translate(5px, 12px);
   }
 }
+
+/*------- TRAIN -------*/
 
 @keyframes atropella {
   0% {

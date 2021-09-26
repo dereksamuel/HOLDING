@@ -2,7 +2,7 @@
   width: 20px;
   height: 20px;
   border-radius: 10px 5px;
-  background: url(https://media.istockphoto.com/photos/texture-of-fire-on-a-black-background-picture-id851823958?b=1&k=6&m=851823958&s=170667a&w=0&h=7g6ym0T1xDpvRsLVmIR0b32QfGYz83yGkPDFFGa2UeY=);
+  background: url(../images/TrajeHoldingTexture.jpg);
   transform: rotate(42deg);
   position: absolute;
   top: 0px;
@@ -14,14 +14,14 @@
 }
 
 .SuperSize .hombro1, .SuperSize .hombro2 {
-  background: url(https://media.istockphoto.com/photos/texture-of-fire-on-a-black-background-picture-id851823958?b=1&k=6&m=851823958&s=170667a&w=0&h=7g6ym0T1xDpvRsLVmIR0b32QfGYz83yGkPDFFGa2UeY=);
+  background: url(../images/TrajeHoldingTexture.jpg);
 }
 
 .anti2 {
   width: 20px;
   height: 20px;
   border-radius: 10px 5px;
-  background: url(https://media.istockphoto.com/photos/texture-of-fire-on-a-black-background-picture-id851823958?b=1&k=6&m=851823958&s=170667a&w=0&h=7g6ym0T1xDpvRsLVmIR0b32QfGYz83yGkPDFFGa2UeY=);
+  background: url(../images/TrajeHoldingTexture.jpg);
   transform: rotate(42deg);
   position: absolute;
   top: 0px;
@@ -124,7 +124,7 @@
 .Super__Pelvis {
   animation: toSuperPelvis 2s 3 forwards ease-in alternate;
   transition: 1s all;
-  background: url(https://media.istockphoto.com/photos/texture-of-fire-on-a-black-background-picture-id851823958?b=1&k=6&m=851823958&s=170667a&w=0&h=7g6ym0T1xDpvRsLVmIR0b32QfGYz83yGkPDFFGa2UeY=);
+  background: url(../images/TrajeHoldingTexture.jpg);
 }
 
 .Super__pierna2 {
@@ -137,7 +137,7 @@
   animation: toSuperTorsoWidth 2s 3 forwards ease-in alternate;
   transition: 1s all;
   background: none;
-  background: url(https://media.istockphoto.com/photos/texture-of-fire-on-a-black-background-picture-id851823958?b=1&k=6&m=851823958&s=170667a&w=0&h=7g6ym0T1xDpvRsLVmIR0b32QfGYz83yGkPDFFGa2UeY=);
+  background: url(../images/TrajeHoldingTexture.jpg);
 }
 
 .Super_arm1_container .arm1_ante, .Super_arm2_container .arm2_ante, .Super_arm1_container .arm1_pos, .Super_arm2_container .arm2_pos {
@@ -146,7 +146,7 @@
 }
 
 .Super__pierna2 .Pierna2_leg1, .Super__pierna2 .Pierna2_leg2, .Super__pierna1 .Pierna1_leg1, .Super__pierna1 .Pierna1_leg2 {
-  background: url(https://media.istockphoto.com/photos/texture-of-fire-on-a-black-background-picture-id851823958?b=1&k=6&m=851823958&s=170667a&w=0&h=7g6ym0T1xDpvRsLVmIR0b32QfGYz83yGkPDFFGa2UeY=);
+  background: url(../images/TrajeHoldingTexture.jpg);
 }
 
 /*https://www.pingletonhats.com/blog-sombreros/wp-content/uploads/2015/01/fedora-michael.png*/
@@ -171,7 +171,7 @@
 
 .SuperEsfuerzo .Pelvis {
   transform: translateX(5px) scale(1.1, 1);
-  background: url(https://media.istockphoto.com/photos/texture-of-fire-on-a-black-background-picture-id851823958?b=1&k=6&m=851823958&s=170667a&w=0&h=7g6ym0T1xDpvRsLVmIR0b32QfGYz83yGkPDFFGa2UeY=);
+  background: url(../images/TrajeHoldingTexture.jpg);
 }
 
 .SuperEsfuerzo .pierna2 {
@@ -183,7 +183,7 @@
   transform: scale(1.1, 1) translateX(4.8px);
   transition: 1s all;
   background: none;
-  background: url(https://media.istockphoto.com/photos/texture-of-fire-on-a-black-background-picture-id851823958?b=1&k=6&m=851823958&s=170667a&w=0&h=7g6ym0T1xDpvRsLVmIR0b32QfGYz83yGkPDFFGa2UeY=);
+  background: url(../images/TrajeHoldingTexture.jpg);
 }
 
 .SuperEsfuerzo .arm1_container .arm1_ante, .SuperEsfuerzo .arm2_container .arm2_ante, .SuperEsfuerzo .arm1_container .arm1_pos, .SuperEsfuerzo .arm2_container .arm2_pos {
@@ -192,9 +192,9 @@
 }
 
 .SuperEsfuerzo .hombro1, .SuperEsfuerzo .hombro2 {
-  background: url(https://media.istockphoto.com/photos/texture-of-fire-on-a-black-background-picture-id851823958?b=1&k=6&m=851823958&s=170667a&w=0&h=7g6ym0T1xDpvRsLVmIR0b32QfGYz83yGkPDFFGa2UeY=);
+  background: url(../images/TrajeHoldingTexture.jpg);
 }
 
 .SuperEsfuerzo .pierna2 .Pierna2_leg1, .SuperEsfuerzo .pierna2 .Pierna2_leg2, .SuperEsfuerzo .pierna1 .Pierna1_leg1, .SuperEsfuerzo .pierna1 .Pierna1_leg2 {
-  background: url(https://media.istockphoto.com/photos/texture-of-fire-on-a-black-background-picture-id851823958?b=1&k=6&m=851823958&s=170667a&w=0&h=7g6ym0T1xDpvRsLVmIR0b32QfGYz83yGkPDFFGa2UeY=);
+  background: url(../images/TrajeHoldingTexture.jpg);
 }

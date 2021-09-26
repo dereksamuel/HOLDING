@@ -1,3 +1,5 @@
+/* -- SCENE 6 --*/
+
 .dolorHombro::after {
   content: "";
   width: 10px;
@@ -101,6 +103,8 @@
   }
 }
 
+/* -- SCENE 7 CHAT between THE DRAGON AND HOLDING --*/
+
 @keyframes ocultarChat {
   0% {
     opacity: 1;
@@ -167,7 +171,7 @@
   content: "";
   width: 167px;
   height: 99px;
-  background: url(https://acegif.com/wp-content/gifs/fire-77.gif);
+  background: url(../images/Fire.gif);
   display: block;
   position: absolute;
   right: -69px;
@@ -184,7 +188,7 @@
 .FireConsecutive {
   width: 350px;
   height: 250px;
-  background: url(https://acegif.com/wp-content/gifs/fire-77.gif);
+  background: url(../images/Fire.gif);
   background-size: contain;
   background-repeat: no-repeat;
   transition: 1s all;
@@ -366,5 +370,18 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+/* -- ultimate scene chat INFINITE ANIMATION --*/
+
+@keyframes importanteMessage {
+  0% {
+    background-color: #f0bb76;
+    box-shadow: 1px 1px 10px rgb(226, 90, 90);
+  }
+  100% {
+    background-color: #eee090;
+    box-shadow: 1px 1px 10px rgb(235, 148, 48);
   }
 }

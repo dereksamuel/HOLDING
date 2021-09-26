@@ -123,6 +123,8 @@
   top: 20px;
 }
 
+/* -- CLASS to rotate background --*/
+
 .rollate {
   transform-origin: center;
   animation: rotate 5.5s ease-in 2 alternate;

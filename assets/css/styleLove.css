@@ -1,3 +1,5 @@
+/*TIME WITH HER WIFE*/
+
 .love {
   background: rgb(120,125,9);
   background: linear-gradient(0deg, rgba(120,125,9,1) 0%, rgba(121,9,9,1) 33%, rgba(196,0,255,1) 100%);
@@ -80,6 +82,8 @@
   top: 0;
 }
 
+/*SICK Holding MUERTE*/
+
 .Enfermo {
   transform: rotate(-78deg) translate(-206px, 73px);
   position: relative;
@@ -154,10 +158,31 @@
 .subTextDk {
   position: absolute;
   right: 78px;
-  background-color: #bbb457;
+  background-color: #fcdc98;
   border-radius: 5px;
   top: 50px;
   max-width: 207px;
   padding: 10px;
+  opacity: 0;
+  transition: 1s all;
   font-size: 12px;
+  animation: importanteMessage 1s alternate infinite ease;
+}
+
+.happy {
+  border-radius: 2px 10px 25px 25px;
+  transform: rotate(19deg) translate(-14px, 2px) scaleY(0.8);
+  transition: 3s all;
+}
+
+.selected h5 {
+  position: absolute;
+  right: 118px;
+  font-style: italic;
+  color: #fff;
+  font-size: 21px;
+  opacity: 0;
+  transition: 1s opacity;
+  background: #912121;
+  padding: 10px;
 }

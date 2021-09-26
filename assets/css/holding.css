@@ -229,7 +229,7 @@
   width: 70px;
   height: 90px;
   clip-path: polygon(3.57% -2.78%, 97.14% 2.22%, 84.29% 100%, 21.43% 101.11%);
-  background: url(https://image.freepik.com/foto-gratis/textura-tela-negra_1122-945.jpg);
+  background: url(../images/telaNegra.webp);
   background-position: center;
   background-size: cover;
   border-radius: 20px 20px;
@@ -242,7 +242,7 @@
   width: 47.5px;
   height: 20px;
   position: absolute;
-  background: url(https://i.pinimg.com/736x/cb/2d/ea/cb2dea1dc79ab6613bb3ea3ee33a5499.jpg);
+  background: url(../images/jean.jpg);
   background-position: center;
   background-size: cover;
   top: 153px;
@@ -254,7 +254,7 @@
 .Pierna1_leg1, .Pierna1_leg2 {
   width: 25px;
   height: 60px;
-  background: url(https://i.pinimg.com/736x/cb/2d/ea/cb2dea1dc79ab6613bb3ea3ee33a5499.jpg);
+  background: url(../images/jean.jpg);
   background-position: center;
   background-size: cover;
   top: 0;
@@ -273,7 +273,7 @@
 .Pierna2_leg1, .Pierna2_leg2 {
   width: 25px;
   height: 60px;
-  background: url(https://i.pinimg.com/736x/cb/2d/ea/cb2dea1dc79ab6613bb3ea3ee33a5499.jpg);
+  background: url(../images/jean.jpg);
   background-position: center;
   background-size: cover;
   top: 0;
@@ -312,7 +312,7 @@
 .arm1_ante, .arm1_pos {
   width: 21px;
   height: 45px;
-  background: url(https://image.freepik.com/foto-gratis/textura-tela-negra_1122-945.jpg);
+  background: url(../images/telaNegra.webp);
   background-position: center;
   background-size: cover;
   clip-path: polygon(3.57% -2.78%, 97.14% 2.22%, 84.29% 100%, 21.43% 101.11%);
@@ -326,7 +326,7 @@
   width: 21px;
   height: 21px;
   border-radius: 50%;
-  background: url(https://image.freepik.com/foto-gratis/textura-tela-negra_1122-945.jpg);
+  background: url(../images/telaNegra.webp);
   background-position: center;
   background-size: cover;
   top: 0;
@@ -342,7 +342,7 @@
 .arm2_ante, .arm2_pos {
   width: 21px;
   height: 45px;
-  background: url(https://image.freepik.com/foto-gratis/textura-tela-negra_1122-945.jpg);
+  background: url(../images/telaNegra.webp);
   background-position: center;
   background-size: cover;
   clip-path: polygon(3.57% -2.78%, 97.14% 2.22%, 84.29% 100%, 21.43% 101.11%);

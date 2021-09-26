@@ -1,3 +1,5 @@
+/* -- GENERAL VARS AND RESET DEFAULT css --*/
+
 :root {
   --color-dark: #7674ee;
   --color-radioactive: #bd5cd8;
@@ -29,6 +31,8 @@ body {
   margin: 0 80px;
   counter-reset: walk; /*FIXME: Arreglame porque el counter es importante para caminar*/
 }
+
+/* -- Bullet points and grid to part of comic --*/
 
 .App {
   background-color: var(--color-black);
@@ -62,6 +66,52 @@ body {
   transition: 1s all;
 }
 
+
+.bulletPoint.large {
+  grid-column: 1 / span 2;
+}
+
+.selected {
+  border: 1px solid #f2dac85c;
+  box-shadow: inset 0px 0px 27px #f2dac85c;
+}
+
+.background {
+  position: absolute;
+}
+
+.SuperContainer {
+  position: absolute;
+  z-index: 5;
+  right: 37px;
+  transform: scale(0.7);
+}
+
+.large_secondary {
+  grid-column: 2 / span 3;
+  background: url(../images/hospital.webp);
+  background-size: cover;
+}
+
+.large_secondary h4 {
+  font-size: 13px;
+  color: #661010;
+  font-weight: bold;
+  margin: 10px;
+  text-shadow: 1px 1px 10px #ff000091;
+}
+
+.large_three {
+  grid-column: 3 / span 2;
+  background: linear-gradient(0deg, rgb(230, 231, 207) 0%, rgba(121,9,9,1) 33%, rgb(230, 192, 69) 100%);
+}
+
+.large_three + .bulletPoint {
+  background: linear-gradient(0deg, rgb(230, 231, 207) 0%, rgba(121,9,9,1) 33%, rgb(230, 192, 69) 100%);
+}
+
+/* -- OPACITY GAME --*/
+
 .opacity-none {
   visibility: hidden;
   opacity: 0;
@@ -72,14 +122,7 @@ body {
   opacity: 1;
 }
 
-.bulletPoint.large {
-  grid-column: 1 / span 2;
-}
-
-.selected {
-  border: 1px solid #f2dac85c;
-  box-shadow: inset 0px 0px 27px #f2dac85c;
-}
+/*--- SCENE 3 ---*/
 
 .scene_3 {
   background-color: rgb(252, 199, 85);
@@ -117,7 +160,7 @@ body {
 }
 
 .sky, .sky2 {
-  background: url(https://cdn.pngsumo.com/pequea-nube-blanca-en-2019-nubes-png-plantillas-para-fotos-y-nubes-png-1988_1290.png);
+  background: url(../images/sky.png);
   background-size: cover;
   background-repeat: no-repeat;
   width: 233px;
@@ -142,17 +185,7 @@ body {
   right: -88px;
 }
 
-.background {
-  position: absolute;
-}
-
-.SuperContainer {
-  position: absolute;
-  z-index: 5;
-  right: 37px;
-  transform: scale(0.7);
-}
-
+/*SCENE 5 REALITY CALLE ANCIANA*/
 .ilusion, .reality {
   transition: 1s opacity;
   position: relative;
@@ -170,7 +203,7 @@ body {
   transform-style: preserve-3d;
   transform: rotateX(61deg) translate(-50% , -50%);
   background: rgb(90, 90, 90);
-  background: url(https://thumbs.dreamstime.com/b/fondo-o-textura-gris-calle-superficial-de-carretera-asfalto-del-114466052.jpg);
+  background: url(../images/callePiso.jpg);
   width: 320px;
   height: 394px;
   position: absolute;
@@ -180,7 +213,7 @@ body {
 }
 
 #scene_5 .reality {
-  background: url(https://arc-anglerfish-arc2-prod-elespectador.s3.amazonaws.com/public/KBYL55RCBRDHHKAYTQWIC7TVUQ.jpg);
+  background: url(../images/BogotaCity.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -253,28 +286,6 @@ body {
   position: absolute;
   left: 13px;
   top: 10px;
-}
-
-.large_secondary {
-  grid-column: 2 / span 3;
-  background: aliceblue;
-}
-
-.large_secondary h4 {
-  font-size: 13px;
-  color: #661010;
-  font-weight: bold;
-  margin: 10px;
-  text-shadow: 1px 1px 10px #ff000091;
-}
-
-.large_three {
-  grid-column: 3 / span 2;
-  background: linear-gradient(0deg, rgb(230, 231, 207) 0%, rgba(121,9,9,1) 33%, rgb(230, 192, 69) 100%);
-}
-
-.large_three + .bulletPoint {
-  background: linear-gradient(0deg, rgb(230, 231, 207) 0%, rgba(121,9,9,1) 33%, rgb(230, 192, 69) 100%);
 }
 
 @media screen and (max-width: 1368px) {

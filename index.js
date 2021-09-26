@@ -1,5 +1,7 @@
 import { start } from "./assets/scenes/index.js";
 
+// VAR DEFINITIONS
+
 const $app = document.getElementById("app");
 const $scene1Comic = document.getElementById("sceneComic1");
 
@@ -16,6 +18,7 @@ let $pupila2;
 $app.style.display = "none";
 
 window.onload = async () => {
+  // get COMPONENTS HTML
   const responseTxt = await fetch("./Holding.html");
   const response = await responseTxt.text();
   const responseSuperHolding = await (await fetch("./SuperHolding.html")).text();
@@ -51,6 +54,7 @@ window.onload = async () => {
 };
 
 function play () {
+  // play all SCENES
   firstScene();
   secondScene();
   threeScene();
@@ -262,6 +266,7 @@ async function fourScene () {
           $scene1Comic.style.visibility = "hidden";
           $app.innerHTML = scene2Comic;
           clearTimeout(timeout);
+          // Play the other "BOX" que se encuentra en ./assets/scenes/scene2.html
           start({ holdingParameter: holding, });
         }, 7000);
       });
@@ -270,6 +275,7 @@ async function fourScene () {
 }
 
 function clearableClasses ($element, type = "animationend") {
+  //Limpiador de addEventlisteners
   const $pierna_2 = document.getElementById("pierna2");
   const $pierna_1 = document.getElementById("pierna1");
 

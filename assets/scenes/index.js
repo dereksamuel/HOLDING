@@ -1,3 +1,5 @@
+// VAR DEFINITIONS
+
 const $SuperHoldingLocalFour = document.createElement("div");
 
 let train = null;
@@ -12,6 +14,7 @@ let dragon = null;
 let superHolding = null;
 
 const start = async ({ holdingParameter }) => {
+  // get all COMPONENTS HTML
   holding = holdingParameter;
 
   const $scene52 = document.querySelector("#scene52");
@@ -258,8 +261,12 @@ const ultimateScene = ($scene42) => {
     $scene52.querySelector(".remember .img2").style.opacity = "1";
     $scene52.querySelector(".realtyDK").style.transition = "6s all";
     $scene52.querySelector(".realtyDK").style.transform = "scale(1.5) translate(132px, -53px)";
+    $scene52.querySelector(".subTextDk").style.opacity = "1";
+    $scene52.querySelector("h5").style.opacity = "1";
+
+    $HoldingDiv.querySelector(".mouth").classList.add("happy");
     clearTimeout(ultimateTimeout);
-  }, 2500);
+  }, 4000);
 };
 
 export {
