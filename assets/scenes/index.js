@@ -1,7 +1,10 @@
+const $SuperHoldingLocalFour = document.createElement("div");
+
 let train = null;
 let holding = null;
 let consuelo = null;
 let $HoldingHuman = null;
+let $HoldingDiv = null;
 
 let $Dragon = null;
 let $SuperHoldingLocal = null;
@@ -9,8 +12,13 @@ let dragon = null;
 let superHolding = null;
 
 const start = async ({ holdingParameter }) => {
-  const $scene32 = document.querySelector("#scene32");
   holding = holdingParameter;
+
+  const $scene52 = document.querySelector("#scene52");
+  const $scene32 = document.querySelector("#scene32");
+  $HoldingDiv = document.createElement("div");
+  $HoldingDiv.innerHTML = holding;
+  $scene52.querySelector(".content").appendChild($HoldingDiv);
 
   $Dragon = document.createElement("div");
   $SuperHoldingLocal = document.createElement("div");
@@ -196,18 +204,62 @@ const threeScene = async ($Holding2, $scene22) => {
 const fourScene = () => {
   const $scene32 = document.querySelector("#scene32");
   const $scene42 = document.querySelector("#scene42");
+  $SuperHoldingLocalFour.innerHTML = superHolding;
 
   $scene32.classList.remove("selected");
   $scene32.querySelector(".bulletPoint_tapa").classList.remove("opacity-none");
 
+  $scene42.classList.add("selected");
+  $scene42.querySelector(".bulletPoint_tapa").classList.add("opacity-none");
+  $scene42.querySelector(".content").appendChild($SuperHoldingLocalFour);
+
+  $SuperHoldingLocalFour.querySelector(".arm2_container").style.transform = "translate(-7px, -2px)";
+  $SuperHoldingLocalFour.querySelector(".arm1_container").style.transform = "translate(7px, -2px)";
+
+  $SuperHoldingLocalFour.style.transition = "1s all";
+  $SuperHoldingLocalFour.style.right = "96px";
+
+  $SuperHoldingLocalFour.classList.add("SuperContainer");
+  $SuperHoldingLocalFour.classList.add("SuperNormal");
+  $SuperHoldingLocalFour.classList.add("HoldingHerido");
+
+  $SuperHoldingLocalFour.querySelector(".fire").style.opacity = "0";
+  $SuperHoldingLocalFour.querySelector(".fire2").style.opacity = "0";
+  $SuperHoldingLocalFour.querySelector(".fire").style.animation = "none";
+  $SuperHoldingLocalFour.querySelector(".fire2").style.animation = "none";
+
+  $SuperHoldingLocalFour.querySelector(".Pierna2_leg1").style.animation = "none";
+  $SuperHoldingLocalFour.querySelector(".Pierna1_leg1").style.animation = "none";
+  $SuperHoldingLocalFour.querySelector(".pierna22").style.animation = "none";
+  $SuperHoldingLocalFour.querySelector(".pierna11").style.animation = "none";
+
+  $SuperHoldingLocalFour.querySelector(".arm2container").style.animation = "none";
+  $SuperHoldingLocalFour.querySelector(".arm1container").style.animation = "none";
+  $SuperHoldingLocalFour.querySelector(".arm1container").style.transform = "rotate(-70deg) translateY(-11px) translateX(7px)";
+  $SuperHoldingLocalFour.querySelector(".arm1container").style.transformOrigin = "right top";
+
+  const semiUltimateTimer = setTimeout(() => {
+    ultimateScene($scene42);
+    clearTimeout(semiUltimateTimer);
+  }, 6500);
+};
+
+const ultimateScene = ($scene42) => {
+  const $scene52 = document.querySelector("#scene52");
+
   $scene42.classList.remove("selected");
   $scene42.querySelector(".bulletPoint_tapa").classList.remove("opacity-none");
 
-  $scene42.querySelector(".content").appendChild($SuperHoldingLocal);
-  $SuperHoldingLocal.querySelector(".arm2_container").style.transform = "translate(-7px, -2px)";
-  $SuperHoldingLocal.querySelector(".arm1_container").style.transform = "translate(7px, -2px)";
-  $SuperHoldingLocal.style.transition = "1s all";
-  $SuperHoldingLocal.classList.add("HoldingHerido");
+  $HoldingDiv.classList.add("Enfermo");
+  $scene52.classList.add("selected");
+  $scene52.querySelector(".remember").style.opacity = "1";
+  $scene52.querySelector(".bulletPoint_tapa").classList.add("opacity-none");
+  const ultimateTimeout = setTimeout(() => {
+    $scene52.querySelector(".remember .img2").style.opacity = "1";
+    $scene52.querySelector(".realtyDK").style.transition = "6s all";
+    $scene52.querySelector(".realtyDK").style.transform = "scale(1.5) translate(132px, -53px)";
+    clearTimeout(ultimateTimeout);
+  }, 2500);
 };
 
 export {

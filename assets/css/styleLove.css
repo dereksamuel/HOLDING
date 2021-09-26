@@ -48,3 +48,116 @@
   bottom: 40px;
   background-color: rgb(144, 161, 85);
 }
+
+.cama {
+  width: 292px;
+  height: 100px;
+  position: relative;
+  left: 59px;
+  bottom: -124px;
+}
+
+.cama_content {
+  width: 292px;
+  height: 100px;
+  border-radius: 15px;
+  position: relative;
+  background-color: rgb(163, 241, 176);
+  z-index: 7;
+  bottom: -19px;
+}
+
+.cama .pata1, .cama .pata2 {
+  width: 15px;
+  height: 140px;
+  background: brown;
+  border-radius: 5px;
+  position: absolute;
+}
+
+.cama .pata2 {
+  right: 0;
+  top: 0;
+}
+
+.Enfermo {
+  transform: rotate(-78deg) translate(-206px, 73px);
+  position: relative;
+  z-index: 8;
+  transform-origin: left top;
+}
+
+.Enfermo .Torso, .Enfermo .hombro1, .Enfermo .hombro2, .Enfermo .arm1_ante, .Enfermo .arm2_ante {
+  background: rgb(58, 157, 187);
+}
+
+.Enfermo .eye1, .Enfermo .eye2 {
+  background: #ccb1a1;
+  border: none;
+}
+
+.Enfermo .pupila1, .Enfermo .pupila2 {
+  display: none;
+}
+
+.Enfermo .face {
+  box-shadow: 0px 3px 28px inset #eee66a;
+}
+
+.Enfermo .arm1_pos, .Enfermo .arm2_pos {
+  background: #e7d1c1;
+}
+
+.remember {
+  width: 182px;
+  padding: 10px;
+  height: 176px;
+  border-radius: 64px;
+  background-color: #8cbae1;
+  position: absolute;
+  right: 150px;
+  top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: 1s all;
+}
+
+.remember img {
+  max-width: 100px;
+  border-radius: 5px;
+  position: absolute;
+}
+
+.remember img:nth-child(2) {
+  opacity: 0;
+}
+
+.buble1R, .buble2R {
+  width: 20px;
+  height: 20px;
+  background: #8cbae1;
+  border-radius: 50%;
+  position: absolute;
+  left: -21px;
+  bottom: 58px;
+}
+
+.buble2R {
+  left: -48px;
+  bottom: 58px;
+  width: 15px;
+  height: 15px;
+}
+
+.subTextDk {
+  position: absolute;
+  right: 78px;
+  background-color: #bbb457;
+  border-radius: 5px;
+  top: 50px;
+  max-width: 207px;
+  padding: 10px;
+  font-size: 12px;
+}

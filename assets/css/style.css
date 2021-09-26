@@ -67,6 +67,11 @@ body {
   opacity: 0;
 }
 
+.opacity-1 {
+  visibility: visible;
+  opacity: 1;
+}
+
 .bulletPoint.large {
   grid-column: 1 / span 2;
 }
@@ -252,6 +257,15 @@ body {
 
 .large_secondary {
   grid-column: 2 / span 3;
+  background: aliceblue;
+}
+
+.large_secondary h4 {
+  font-size: 13px;
+  color: #661010;
+  font-weight: bold;
+  margin: 10px;
+  text-shadow: 1px 1px 10px #ff000091;
 }
 
 .large_three {
