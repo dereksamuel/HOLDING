@@ -12,4 +12,4 @@ Por cierto, los personajes son construidos principalmente con CSS, lo único que
 
 ## CÓMO VER EL PROYECTO
 
-la url del proyecto funcionando es esta: [a link](https://dereksamuel.github.io/HOLDING/)
+la url del proyecto funcionando es esta: [https://dereksamuel.github.io/HOLDING/](https://dereksamuel.github.io/HOLDING/)
